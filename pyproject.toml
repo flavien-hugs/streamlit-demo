@@ -6,9 +6,13 @@ authors = ["Flavien HUGS <flavienhugs@pm.com>"]
 packages = [{include = "src"}]
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = ">=3.12,<3.13"
 streamlit = "^1.37.0"
 watchdog = "^4.0.1"
+rembg = {extras = ["numpy<2"], version = "^2.0.57"}
+pydantic = "^2.8.2"
+pydantic-settings = "^2.3.4"
+onnxruntime = "^1.18.1"
 
 
 [build-system]
